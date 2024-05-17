@@ -15,9 +15,7 @@ export default function Home() {
           I am a junior frontend developer with a passion for creating
           compelling user experiences. My expertise lies in building responsive
           and intuitive web interfaces that prioritize usability and
-          performance. While I may be early in my career, I bring a solid
-          foundation and a drive to deliver high-quality solutions for premium
-          digital products and services.
+          performance.
         </p>
 
         {/* Right Sticky Nav */}
@@ -80,7 +78,7 @@ export default function Home() {
               descrition
             </h4>
           </span>
-          
+
           {/*Forth Image*/}
           <span>
             <img
