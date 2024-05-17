@@ -6,9 +6,8 @@ First, run the development server:
 
 ```bash
 cd simple-portfolio
-npm install next @latest
+npm install next@latest
 npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
 npm run dev
 ```
 
@@ -17,7 +16,6 @@ cd simple-portfolio
 yarn
 yarn add next@latest
 yarn add --dev tailwindcss postcss autoprefixer
-npx tailwindcss init -p
 yarn dev
 ```
 
@@ -26,7 +24,6 @@ cd simple-portfolio
 pnpm install
 pnpm install next@latest
 pnpm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
 pnpm dev
 ```
 
@@ -35,7 +32,6 @@ cd simple-portfolio
 bun install
 bun add next@latest
 bun add -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
 bun dev
 ```
 
