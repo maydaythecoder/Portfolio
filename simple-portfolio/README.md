@@ -5,14 +5,36 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
+npm install next @latest
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
 npm run dev
-# or
+```
+
+```bash
+yarn
+yarn add next@latest
+yarn add --dev tailwindcss postcss autoprefixer
+npx tailwindcss init -p
 yarn dev
-# or
+```
+
+```bash
+pnpm install
+pnpm install next@latest
+pnpm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
 pnpm dev
-# or
+```
+
+```bash
+bun install
+bun add next@latest
+bun add -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
 bun dev
 ```
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
