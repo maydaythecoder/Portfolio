@@ -5,6 +5,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
+cd Portfolio
 cd simple-portfolio
 npm install next@latest
 npm install -D tailwindcss postcss autoprefixer
@@ -12,6 +13,7 @@ npm run dev
 ```
 
 ```bash
+cd Portfolio
 cd simple-portfolio
 yarn
 yarn add next@latest
@@ -20,6 +22,7 @@ yarn dev
 ```
 
 ```bash
+cd Portfolio
 cd simple-portfolio
 pnpm install
 pnpm install next@latest
@@ -28,6 +31,7 @@ pnpm dev
 ```
 
 ```bash
+cd Portfolio
 cd simple-portfolio
 bun install
 bun add next@latest
