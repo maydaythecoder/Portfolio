@@ -51,8 +51,8 @@ export default function Home() {
           {/*Second Image*/}
           <span>
             <img
-              className="w-[40vw] h-[60vh] max-w-[100%]"
-              src="https://images.unsplash.com/photo-1488554378835-f7acf46e6c98?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              className="w-[30vw] h-[50vh] max-w-[100%]"
+              src="https://images.unsplash.com/photo-1701505708176-63194ee8f0e8?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             />
             <h2 className="font-space-grotesk text-[24px] tracking-[-0.025em]">
               Title
@@ -68,8 +68,8 @@ export default function Home() {
           {/*Third Image*/}
           <span>
             <img
-              className="w-[30vw] h-[50vh] max-w-[100%]"
-              src="https://images.unsplash.com/photo-1701505708176-63194ee8f0e8?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              className="w-[40vw] h-[60vh] max-w-[100%]"
+              src="https://images.unsplash.com/photo-1488554378835-f7acf46e6c98?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             />
             <h2 className="font-space-grotesk text-[24px] tracking-[-0.025em]">
               Title
@@ -78,7 +78,7 @@ export default function Home() {
               descrition
             </h4>
           </span>
-
+          
           {/*Forth Image*/}
           <span>
             <img
@@ -96,7 +96,7 @@ export default function Home() {
       </div>
 
       {/* footer */}
-      <div className=" bg-black">
+      <div className=" bg-black h-[60vh]">
         <h5 className="text-[white] text-center font-normal tracking-[-0.025em] text-[96px] leading-[1em] md:text-[60px] text-[color:var(--64ddf9a6011f1)]">
           {" "}
           Let's work together{" "}
