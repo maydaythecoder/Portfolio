@@ -8,10 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        'faded-white': '0 0 20px 10px rgba(255, 255, 255, 0.5)',
+      },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'radial-gradient': 'radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,255,255,0.5) 1%, rgba(255,255,255,0) 70%)',
       },
     },
     fontFamily: {
