@@ -4,7 +4,8 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <div className="bg-white p-10">
+    <div className="relative ">
+      <div className="bg-white p-10 mb-96">
         {/* Left Sticky Title*/}
         <h3 
   className="font-space-grotesk font-medium tracking-[-0.025em] text-[20px] z-[100] fixed top-0 left-0 px-10 py-10"
@@ -35,7 +36,7 @@ export default function Home() {
   </Link>
 </div>
 
-<div className="p-5 flex flex-row">
+<div className="p-5 flex flex-row z-10">
         {/* Image Track One */}
         <span className="w-[50vw] ml-[3%] ">
           {/*First Image*/}
@@ -100,31 +101,33 @@ export default function Home() {
         </div>
       </div>
 
-      {/* footer */}
-      <div className=" bg-black h-[60vh] ">
-        <h5 className="text-[white] text-center pt-24 font-space-grotesk font-normal tracking-[-0.025em] text-8xl leading-[1em] md:text-[100px] text-[color:var(--64ddf9a6011f1)]">
-          Let's work together
-        </h5>
+{/* Footer */}
+<div className="">
+<div className=" bg-black h-[60vh] fixed bottom-0 left-0 w-full -z-50">
+    <h5 className="text-[white] text-center pt-24 font-space-grotesk font-normal tracking-[-0.025em] text-8xl leading-[1em] md:text-[100px] text-[color:var(--64ddf9a6011f1)]">
+      Let's work together
+    </h5>
 
-<div className=" border-t-[1px] border-gray-400 border-opacity-40 mt-28 mx-10">
-        <span className="align-baseline absolute mt-8 ml-9 font-space-grotesk font-light tracking-[-0.025em] text-[16px] text-[white] text-[color:var(--64ddf9a6011f1)]">
-          
-          United States <br /> columbus, Ohio(OH), 43231
-        </span>
-        <a
-          className="align-baseline absolute mt-8 ml-[35vw] font-space-grotesk font-light tracking-[-0.025em] text-[16px] no-underline hover:underline text-[white] text-[color:var(--64ddf9a6011f1)]"
-          href="mailto:hey@abstract.agency"
-        >
-          muhyadin.mohamed.003@gmail.com
-        </a>
-        <a
-          className="align-baseline absolute mt-8 pt-6 ml-[35vw] font-space-grotesk font-light tracking-[-0.025em] text-[16px] no-underline hover:underline text-[white] text-[color:var(--64ddf9a6011f1)]"
-          href="mailto:hey@abstract.agency"
-        >
-          ###-###-####
-        </a>
-        </div>
-      </div>
+    <div className=" border-t-[1px] border-gray-400 border-opacity-40 mt-28 mx-10">
+      <span className="align-baseline absolute mt-8 ml-9 font-space-grotesk font-light tracking-[-0.025em] text-[16px] text-[white] text-[color:var(--64ddf9a6011f1)]">
+        United States <br /> columbus, Ohio(OH), 43231
+      </span>
+      <a
+        className="align-baseline absolute mt-8 ml-[35vw] font-space-grotesk font-light tracking-[-0.025em] text-[16px] no-underline hover:underline text-[white] text-[color:var(--64ddf9a6011f1)]"
+        href="mailto:hey@abstract.agency"
+      >
+        muhyadin.mohamed.003@gmail.com
+      </a>
+      <a
+        className="align-baseline absolute mt-8 pt-6 ml-[35vw] font-space-grotesk font-light tracking-[-0.025em] text-[16px] no-underline hover:underline text-[white] text-[color:var(--64ddf9a6011f1)]"
+        href="mailto:hey@abstract.agency"
+      >
+        ###-###-####
+      </a>
+    </div>
+  </div>
+  </div>
+</div>
     </>
   );
 }
