@@ -12,8 +12,8 @@ import Footer from "./Components/Footer";
 export default function Home() {
   return (
     <>
-      <div className="relative">
-        <div className="bg-white p-10 mb-96">
+      <div className="relativeh-[500vh]">
+        <div className="bg-white p-10 mb-96  h-[440vh]">
           <Header />
           <Images />
         </div>
