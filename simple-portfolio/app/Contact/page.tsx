@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <>
     <StickyHeader />
-    <div className="relative isolate bg-white">
+    <div className="relative isolate bg-white h-[100vh] lg:overflow-clip">
     <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
       <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
         <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
@@ -77,7 +77,7 @@ const Contact = () => {
           </dl>
         </div>
       </div>
-      <form action="#" method="POST" className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
+      <form action="#" method="POST" className=" lg:absolute px-6 lg:ml-[50vw] lg:-mt-24 md:-mt-4 pt-20 sm:mb-32 lg:px-8 lg:py-48 h-fit">
         <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>

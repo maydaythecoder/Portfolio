@@ -93,6 +93,8 @@ const ParallaxScroll: React.FC = () => {
       window.removeEventListener("touchmove", handleOnMove as EventListener);
     };
   }, []);
+
+  // TODO: add footer
   
     return (
       <>
