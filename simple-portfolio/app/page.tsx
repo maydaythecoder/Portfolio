@@ -8,7 +8,7 @@ import Footer from "./Components/Footer";
 //TODO: add button at center of image on hover to link to project
 //TODO: add animation to links and words on reload
 //TODO: add scroll effect with bezier curve
-//TODO: add functionality to links
+
 
 export default function Home() {
   return (
