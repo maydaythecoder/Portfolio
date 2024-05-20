@@ -4,9 +4,11 @@ import ImageTwo from './ImageTwo'
 
 const Imagetrackone = () => {
   return (
-    <div className="w-[35vw] gap-10">
+    <div className="flex flex-col w-[35vw] gap-10">
       <ImageOne />
-      <ImageTwo />
+      <div className="flex-grow flex items-center justify-center mt-10">
+        <ImageTwo />
+      </div>
     </div>
   )
 }

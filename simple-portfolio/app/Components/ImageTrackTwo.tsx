@@ -59,14 +59,16 @@ const Imagetracktwo = () => {
 //   }, []);
 
   return (
-    <div className="w-[45vw] mr-[3%]  h-screen">
-      <div>
-        <ImageThree />
-      </div>
-      <div>
-        <ImageFour />
-      </div>
+    <div className="w-[45vw] mr-[3%]  flex flex-col h-full">
+      <div className="flex-grow" style={{ flexBasis: '50%' }}></div>
+    <div>
+      <ImageThree />
     </div>
+    <div className="flex-grow" style={{ flexBasis: '25%' }}></div>
+    <div>
+      <ImageFour />
+    </div>
+  </div>
   );
 }
 
