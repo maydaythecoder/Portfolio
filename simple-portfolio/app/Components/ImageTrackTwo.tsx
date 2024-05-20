@@ -68,10 +68,10 @@ const Imagetracktwo: React.FC = () => {
           />
         </div>
         <h2 className="mt-2 group-hover:-translate-y-2 transition-all duration-300 font-space-grotesk text-[24px] tracking-[-0.025em]">
-          Title
+        Neural Network
         </h2>
         <h4 className="group-hover:-translate-y-2 transition-all duration-300 font-space-grotesk text-[18px] tracking-[-0.025em] font-light mb-96">
-          Description
+          classifies spiral data points into three classes<br />  and calculates the classification loss.
         </h4>
       </div>
 
@@ -86,10 +86,10 @@ const Imagetracktwo: React.FC = () => {
           />
         </div>
         <h2 className="mt-2 group-hover:-translate-y-2 transition-all duration-300 font-space-grotesk text-[24px] tracking-[-0.025em]">
-          Title
+          MortgageMate
         </h2>
         <h4 className="group-hover:-translate-y-2 transition-all duration-300 font-space-grotesk text-[18px] tracking-[-0.025em] font-light">
-          Description
+          mortgage tracker to plan out your future
         </h4>
       </div>
     </div>

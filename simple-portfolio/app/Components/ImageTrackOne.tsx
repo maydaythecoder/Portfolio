@@ -13,10 +13,10 @@ const Imagetrackone = () => {
           />
         </div>
         <h2 className="mt-2 group-hover:-translate-y-2 transition-all duration-300 font-space-grotesk text-[24px] tracking-[-0.025em]">
-          Title
+        A-Star 
         </h2>
         <h4 className="group-hover:-translate-y-2 transition-all duration-300 font-space-grotesk text-[18px] tracking-[-0.025em] font-light">
-          description
+        A-Star pathfinding algorithm
         </h4>
       </div>
 
@@ -30,10 +30,10 @@ const Imagetrackone = () => {
           />
         </div>
         <h2 className="mt-2 group-hover:-translate-y-2 transition-all duration-300 font-space-grotesk text-[24px] tracking-[-0.025em]">
-          Title
+        AvA-1.0 
         </h2>
         <h4 className="group-hover:-translate-y-2 transition-all duration-300 font-space-grotesk text-[18px] tracking-[-0.025em] font-light">
-          description
+          Automated virtual assistant to complete basic tasts
         </h4>
       </div>
     </div>
