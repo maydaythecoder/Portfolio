@@ -14,14 +14,12 @@ import Footer from "./Components/Footer";
 
 export default function Home() {
   return (
-    <>
-      <div className="relativeh-[500vh]">
-        <div className="bg-white p-10 mb-96  h-[440vh]">
+      <div className="relative ">
+        <div className="bg-white p-10 mb-96  h-fit">
           <Header />
           <Images />
         </div>
         <Footer />
       </div>
-    </>
   );
 }
