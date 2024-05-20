@@ -33,7 +33,7 @@ const ImageFour: React.FC = () => {
       <div className="group -mt-10 transition-transform duration-[1200ms]" ref={scrollContainerRef} id="group">
         <div className="w-fit rounded-lg bg-gray-100 overflow-hidden hover:transition group-hover:scale-95 duration-300 hover:ease-in-out">
           <img
-            className="w-[35vw] h-[110vh] max-w-full group-hover:scale-110 transition-all duration-[1200ms] image"
+            className="w-[35vw] h-[90vh] max-w-full group-hover:scale-110 transition-all duration-[1200ms] image"
             src="https://images.unsplash.com/photo-1567943183748-3a7542120c90?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWJzdHJhY3QlMjBhcmNoaXRlY3R1cmV8ZW58MHx8MHx8fDA%3D"
             alt="Fourth Image"
           />
