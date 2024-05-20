@@ -5,11 +5,9 @@ import Footer from "./Components/Footer";
 
 //TODO: make home page responsive
 //TODO: make about page responsive
-//TODO: add padding to images that will be animated
-//TODO: move Image-Track-Two down half way
 //TODO: add button at center of image on hover to link to project
 //TODO: add animation to links and words on reload
-//TODO: add scroll effect with bezier curve
+//TODO: add scroll effect with bezier curve (.5/2)
 
 
 export default function Home() {

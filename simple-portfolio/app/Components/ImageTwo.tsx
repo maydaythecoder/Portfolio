@@ -1,10 +1,51 @@
-import React from 'react'
+"use client"
+import React, { useEffect, useRef } from 'react';
 
-const ImageTwo = () => {
+const ImageTwo: React.FC = () => {
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const lastScrollYRef = useRef(0);
+
+  useEffect(() => {
+    const track = scrollContainerRef.current;
+    if (!track) return;
+
+    const handleScroll = () => {
+      const scrollDelta = window.scrollY - lastScrollYRef.current;
+      lastScrollYRef.current = window.scrollY;
+
+      const currentTransform = parseFloat(track.style.transform.replace('translateY(', '').replace('px)', '')) || 0;
+      const transformValue = currentTransform + (scrollDelta / 2.665); 
+
+      track.style.transition = "transform 0.1s ease-out";
+      track.style.transform = `translateY(${transformValue}px)`;
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            lastScrollYRef.current = window.scrollY;
+            window.addEventListener("scroll", handleScroll);
+          } else {
+            window.removeEventListener("scroll", handleScroll);
+          }
+        });
+      },
+      { threshold: 0 }
+    );
+
+    observer.observe(track);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       {/* Second Image */}
-      <div className="group row-span-1 ml-20 ">
+      <div className="group row-span-1 ml-20 mt-40" ref={scrollContainerRef}>
         <div className="w-fit h-fit rounded-lg bg-gray-100 overflow-hidden hover:transition group-hover:scale-95 duration-300 hover:ease-in-out">
           <img
             className="w-[30vw] h-[50vh] max-w-[100%] object-cover group-hover:scale-110 transition-all duration-300"
@@ -16,11 +57,11 @@ const ImageTwo = () => {
         AvA-1.0 
         </h2>
         <h4 className="group-hover:-translate-y-2 transition-all duration-300 font-space-grotesk text-[18px] tracking-[-0.025em] font-light">
-          Automated virtual assistant to complete basic tasts
+          Automated virtual assistant to complete basic tasks
         </h4>
       </div>
     </>
   )
 }
 
-export default ImageTwo
+export default ImageTwo;
