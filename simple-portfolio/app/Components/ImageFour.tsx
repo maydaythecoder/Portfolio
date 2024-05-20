@@ -1,13 +1,10 @@
-'use client'
-import React, { useEffect, useRef } from 'react';
-import ImageThree from './ImageThree';
-import ImageFour from './ImageFour';
+import React from "react";
 
-const Imagetracktwo = () => {
-//   const scrollContainerRef = useRef<HTMLDivElement>(null);
-//   const cumulativeOffsetRef = useRef(0);
+const ImageFour: React.FC = () => {
+  //   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  //   const cumulativeOffsetRef = useRef(0);
 
-//   useEffect(() => {
+//     useEffect(() => {
 //     let isScrolling: number | NodeJS.Timeout | undefined;
 //     let lastScrollTop = window.scrollY;
 //     let velocity = 0;
@@ -56,14 +53,29 @@ const Imagetracktwo = () => {
 //     return () => {
 //       window.removeEventListener('scroll', handleScroll);
 //     };
-//   }, []);
+//      }, []);
 
   return (
-    <div className="w-[45vw] mr-[3%] grid grid-rows-2 gap-10">
-      <ImageThree />
-      <ImageFour />
+    <div>
+      {/* Fourth Image */}
+      {/* <div className="group row-span-1 flex flex-col items-start" ref={scrollContainerRef}> */}
+      <div className="group row-span-1 flex flex-col items-start">
+        <div className="w-fit rounded-lg bg-gray-100 overflow-hidden hover:transition group-hover:scale-95 duration-300 hover:ease-in-out">
+          <img
+            className="w-[35vw] h-[110vh] max-w-[100%] group-hover:scale-110 transition-all duration-300"
+            src="https://images.unsplash.com/photo-1567943183748-3a7542120c90?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWJzdHJhY3QlMjBhcmNoaXRlY3R1cmV8ZW58MHx8MHx8fDA%3D"
+            alt="Fourth Image"
+          />
+        </div>
+        <h2 className="mt-2 group-hover:-translate-y-2 transition-all duration-300 font-space-grotesk text-[24px] tracking-[-0.025em]">
+          MortgageMate
+        </h2>
+        <h4 className="group-hover:-translate-y-2 transition-all duration-300 font-space-grotesk text-[18px] tracking-[-0.025em] font-light">
+          mortgage tracker to plan out your future
+        </h4>
+      </div>
     </div>
   );
-}
+};
 
-export default Imagetracktwo;
+export default ImageFour;
