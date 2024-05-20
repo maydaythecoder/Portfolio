@@ -6,7 +6,7 @@ const ImageThree = () => {
     <div>
       <>
         {/* Third Image */}
-        <div className="group row-span-1 flex flex-col items-start">
+        <div className="group h-fit">
           <div className="w-fit rounded-lg bg-gray-100 overflow-hidden hover:transition group-hover:scale-95 duration-300 hover:ease-in-out">
             <img
               className="w-[40vw] h-[60vh] max-w-[110%] group-hover:scale-110 transition-all duration-300"
@@ -17,7 +17,7 @@ const ImageThree = () => {
           <h2 className="mt-2 group-hover:-translate-y-2 transition-all duration-300 font-space-grotesk text-[24px] tracking-[-0.025em]">
             Neural Network
           </h2>
-          <h4 className="group-hover:-translate-y-2 transition-all duration-300 font-space-grotesk text-[18px] tracking-[-0.025em] font-light mb-96">
+          <h4 className="group-hover:-translate-y-2 transition-all duration-300 font-space-grotesk text-[18px] tracking-[-0.025em] font-light">
             classifies spiral data points into three classes
             <br /> and calculates the classification loss.
           </h4>

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Header from "./Components/header";
-import Images from "./Components/images";
+import Images from "./Components/Projects";
 import Footer from "./Components/Footer";
 
 //TODO: make home page responsive
@@ -15,7 +15,7 @@ import Footer from "./Components/Footer";
 export default function Home() {
   return (
       <div className="relative ">
-        <div className="bg-white p-10 mb-96  h-fit">
+        <div className="bg-white p-10 mb-96 align-bottom h-fit">
           <Header />
           <Images />
         </div>

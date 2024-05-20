@@ -59,9 +59,13 @@ const Imagetracktwo = () => {
 //   }, []);
 
   return (
-    <div className="w-[45vw] mr-[3%] grid grid-rows-2 gap-10">
-      <ImageThree />
-      <ImageFour />
+    <div className="w-[45vw] mr-[3%]  h-screen">
+      <div>
+        <ImageThree />
+      </div>
+      <div>
+        <ImageFour />
+      </div>
     </div>
   );
 }

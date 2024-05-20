@@ -4,7 +4,7 @@ const ImageTwo = () => {
   return (
     <>
       {/* Second Image */}
-      <div className="group row-span-1 ml-20 flex flex-col items-start">
+      <div className="group row-span-1 ml-20 ">
         <div className="w-fit h-fit rounded-lg bg-gray-100 overflow-hidden hover:transition group-hover:scale-95 duration-300 hover:ease-in-out">
           <img
             className="w-[30vw] h-[50vh] max-w-[100%] object-cover group-hover:scale-110 transition-all duration-300"

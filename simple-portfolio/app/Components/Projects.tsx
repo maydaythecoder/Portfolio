@@ -4,7 +4,7 @@ import Imagetracktwo from './ImageTrackTwo'
 
 const Images = () => {
   return (
-    <div className="p-5 grid grid-cols-2 gap-28">
+    <div className="p-5  gap-28">
       {/* Image Track One */}
       <div className='ml-24'>
         <Imagetrackone />

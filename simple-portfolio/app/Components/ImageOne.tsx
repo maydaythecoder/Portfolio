@@ -4,7 +4,7 @@ const ImageOne = () => {
   return (
    <>
           {/* First Image */}
-          <div className="group row-span-1 flex flex-col items-start">
+          <div className="group ">
           <div className="w-full rounded-lg bg-gray-100 overflow-hidden hover:transition group-hover:scale-95 duration-300 hover:ease-in-out">
             <img
               className="w-full h-full object-cover group-hover:scale-110 transition-all duration-300"

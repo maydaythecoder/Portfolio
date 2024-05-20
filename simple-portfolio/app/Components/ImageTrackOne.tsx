@@ -4,7 +4,7 @@ import ImageTwo from './ImageTwo'
 
 const Imagetrackone = () => {
   return (
-    <div className="w-[35vw] grid grid-rows-2 gap-10">
+    <div className="w-[35vw] gap-10">
       <ImageOne />
       <ImageTwo />
     </div>
