@@ -2,59 +2,59 @@
 import React, { useEffect, useRef } from 'react';
 
 const Imagetracktwo: React.FC = () => {
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const cumulativeOffsetRef = useRef(0);
+//   const scrollContainerRef = useRef<HTMLDivElement>(null);
+//   const cumulativeOffsetRef = useRef(0);
 
-  useEffect(() => {
-    let isScrolling: number | NodeJS.Timeout | undefined;
-    let lastScrollTop = window.scrollY;
-    let velocity = 0;
-    let animationRunning = false;
+//   useEffect(() => {
+//     let isScrolling: number | NodeJS.Timeout | undefined;
+//     let lastScrollTop = window.scrollY;
+//     let velocity = 0;
+//     let animationRunning = false;
 
-    const handleScroll = () => {
-      if (animationRunning) return;
+//     const handleScroll = () => {
+//       if (animationRunning) return;
 
-      const currentScrollTop = window.scrollY;
-      velocity = (currentScrollTop - lastScrollTop) * 5; // Increase the velocity multiplier for longer distance
-      lastScrollTop = currentScrollTop;
+//       const currentScrollTop = window.scrollY;
+//       velocity = (currentScrollTop - lastScrollTop) * 5; // Increase the velocity multiplier for longer distance
+//       lastScrollTop = currentScrollTop;
 
-      window.clearTimeout(isScrolling);
+//       window.clearTimeout(isScrolling);
 
-      isScrolling = setTimeout(() => {
-        const startTime = performance.now();
-        const duration = 1000; // Duration to continue scrolling in milliseconds
+//       isScrolling = setTimeout(() => {
+//         const startTime = performance.now();
+//         const duration = 1000; // Duration to continue scrolling in milliseconds
 
-        animationRunning = true;
+//         animationRunning = true;
 
-        const applyMomentum = (currentTime: number) => {
-          const elapsed = currentTime - startTime;
-          const progress = elapsed / duration;
+//         const applyMomentum = (currentTime: number) => {
+//           const elapsed = currentTime - startTime;
+//           const progress = elapsed / duration;
 
-          if (progress < 1) { // Stop after duration
-            const easingFactor = Math.log(1 + (1 - progress) * 9) / Math.log(10); // Logarithmic easing factor
-            const transformValue = cumulativeOffsetRef.current + velocity * easingFactor;
+//           if (progress < 1) { // Stop after duration
+//             const easingFactor = Math.log(1 + (1 - progress) * 9) / Math.log(10); // Logarithmic easing factor
+//             const transformValue = cumulativeOffsetRef.current + velocity * easingFactor;
 
-            if (scrollContainerRef.current) {
-              scrollContainerRef.current.style.transform = `translateY(${transformValue}px)`;
-            }
+//             if (scrollContainerRef.current) {
+//               scrollContainerRef.current.style.transform = `translateY(${transformValue}px)`;
+//             }
 
-            requestAnimationFrame(applyMomentum);
-          } else {
-            cumulativeOffsetRef.current += velocity; // Update the cumulative offset with the final velocity
-            animationRunning = false; // Ensure flag is reset after duration
-          }
-        };
+//             requestAnimationFrame(applyMomentum);
+//           } else {
+//             cumulativeOffsetRef.current += velocity; // Update the cumulative offset with the final velocity
+//             animationRunning = false; // Ensure flag is reset after duration
+//           }
+//         };
 
-        requestAnimationFrame(applyMomentum);
-      }, 150); // Adjust timeout duration to match how long you want to wait after scroll stops
-    };
+//         requestAnimationFrame(applyMomentum);
+//       }, 150); // Adjust timeout duration to match how long you want to wait after scroll stops
+//     };
 
-    window.addEventListener('scroll', handleScroll);
+//     window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+//     return () => {
+//       window.removeEventListener('scroll', handleScroll);
+//     };
+//   }, []);
 
   return (
     <div className="w-[45vw] mr-[3%] grid grid-rows-2 gap-10">
@@ -76,7 +76,8 @@ const Imagetracktwo: React.FC = () => {
       </div>
 
       {/* Fourth Image */}
-      <div className="group row-span-1 flex flex-col items-start" ref={scrollContainerRef}>
+      {/* <div className="group row-span-1 flex flex-col items-start" ref={scrollContainerRef}> */}
+      <div className="group row-span-1 flex flex-col items-start">
         <div className="w-fit rounded-lg bg-gray-100 overflow-hidden hover:transition group-hover:scale-95 duration-300 hover:ease-in-out">
           <img
             className="w-[35vw] h-[110vh] max-w-[100%] group-hover:scale-110 transition-all duration-300"
