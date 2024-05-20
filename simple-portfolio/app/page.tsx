@@ -3,6 +3,8 @@ import Header from "./Components/header";
 import Images from "./Components/images";
 import Footer from "./Components/Footer";
 
+//TODO: make home page responsive
+//TODO: make about page responsive
 //TODO: add padding to images that will be animated
 //TODO: move Image-Track-Two down half way
 //TODO: add button at center of image on hover to link to project
