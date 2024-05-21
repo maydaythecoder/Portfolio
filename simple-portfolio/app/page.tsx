@@ -7,8 +7,6 @@ import Footer from "./Components/Footer";
 //TODO: make about page responsive
 //TODO: add button at center of image on hover to link to project
 //TODO: add animation to links and words on reload
-//TODO: add scroll effect with bezier curve (.5/2)
-
 
 export default function Home() {
   return (
