@@ -1,7 +1,6 @@
 'use client'
 import React, { useEffect } from 'react';
 import './styles/ParallaxScroll.css';
-import Header from '../Components/header';
 import StickyHeader from '../Components/StickyHeader';
 
 const ParallaxScroll: React.FC = () => {
@@ -101,7 +100,7 @@ const ParallaxScroll: React.FC = () => {
      <div className='overflow-x-hidden overflow-y-hidden p-5'>
       <StickyHeader />
       <div className="relative w-full h-screen bg-white">
-        <h1 className="absolute text-gray-800 font-sans font-light  left-1/2 transform -translate-x-1/2 mt-10 text-6xl font-space-grotesk" data-value="About Me">about me</h1>
+        <h1 className="absolute text-gray-800 font-sans font-light  left-1/2 transform -translate-x-1/2 mt-10 text-6xl font-space-grotesk" data-value="about me">LearnMore</h1>
         <div id="image-track" className="absolute flex gap-4 left-1/2 transform -translate-y-1/2 mt-20" data-mouse-down-at="0" data-prev-percentage="0">
           <img className="image w-40 h-56 object-cover rounded-lg border-2 border-gray-400 shadow-lg" src="https://images.unsplash.com/photo-1616789916437-bbf724d10dae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHN1cGVyJTIwY2Fyc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1000&q=60" draggable="false" />
           <img className="image w-40 h-56 object-cover rounded-lg border-2 border-gray-400 shadow-lg" src="https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Ym13fGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" draggable="false" />

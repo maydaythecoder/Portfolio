@@ -1,12 +1,11 @@
-import Link from "next/link";
 import Header from "./Components/header";
 import Images from "./Components/Projects";
 import Footer from "./Components/Footer";
 
-// TODO: make home page responsive
-// TODO: make about page responsive
 // TODO: add button at center of image on hover to link to project
 // TODO: add animation to links and words on reload
+// TODO: make about page responsive
+// TODO: make home page responsive
 
 export default function Home() {
   return (
