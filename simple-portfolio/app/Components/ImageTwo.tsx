@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect, useRef } from 'react';
 
 const ImageTwo: React.FC = () => {
@@ -10,14 +10,17 @@ const ImageTwo: React.FC = () => {
     if (!track) return;
 
     const handleScroll = () => {
-      const scrollDelta = window.scrollY - lastScrollYRef.current;
-      lastScrollYRef.current = window.scrollY;
+      // Only apply the scroll animation on large (lg) screens and above
+      if (window.innerWidth >= 1024) {
+        const scrollDelta = window.scrollY - lastScrollYRef.current;
+        lastScrollYRef.current = window.scrollY;
 
-      const currentTransform = parseFloat(track.style.transform.replace('translateY(', '').replace('px)', '')) || 0;
-      const transformValue = currentTransform + (scrollDelta / 2); 
+        const currentTransform = parseFloat(track.style.transform.replace('translateY(', '').replace('px)', '')) || 0;
+        const transformValue = currentTransform + (scrollDelta / 2); 
 
-      track.style.transition = "transform 0.1s ease-out";
-      track.style.transform = `translateY(${transformValue}px)`;
+        track.style.transition = "transform 0.1s ease-out";
+        track.style.transform = `translateY(${transformValue}px)`;
+      }
     };
 
     const observer = new IntersectionObserver(
@@ -45,10 +48,10 @@ const ImageTwo: React.FC = () => {
   return (
     <>
       {/* Second Image */}
-      <div className="group row-span-1 ml-20 mt-40" ref={scrollContainerRef}>
-        <div className="w-fit h-fit rounded-lg bg-gray-100 overflow-hidden hover:transition group-hover:scale-95 duration-300 hover:ease-in-out">
+      <div className="group ml-4 sm:ml-10 lg:ml-20 mt-10 sm:mt-20 lg:mt-40" ref={scrollContainerRef}>
+        <div className="w-full max-w-[90vw] sm:max-w-[60vw] lg:max-w-[30vw] h-[50vh] rounded-lg bg-gray-100 overflow-hidden hover:transition lg:group-hover:scale-95 md:group-hover:scale-95 duration-300 lg:hover:ease-in-out md:hover:ease-in-out">
           <img
-            className="-mt-3 w-[30vw] h-[50vh] max-w-[100%] object-cover group-hover:scale-110 transition-all duration-300"
+            className="w-full h-full object-cover lg:group-hover:scale-110 md:group-hover:scale-110 transition-all duration-300 ease-in-out"
             src="https://images.unsplash.com/photo-1701505708176-63194ee8f0e8?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
           />
@@ -61,7 +64,7 @@ const ImageTwo: React.FC = () => {
         </h4>
       </div>
     </>
-  )
+  );
 }
 
 export default ImageTwo;
