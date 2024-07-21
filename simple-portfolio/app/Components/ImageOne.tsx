@@ -77,10 +77,10 @@ const ImageOne: React.FC = () => {
                     alt=""
                   />
                 </div>
-                <h2 className="mt-2 group-hover:-translate-y-2 transition-all duration-300 ease-in-out font-space-grotesk text-[24px] tracking-[-0.025em]">
+                <h2 className="text-left mt-2 group-hover:-translate-y-2 transition-all duration-300 ease-in-out font-space-grotesk text-[24px] tracking-[-0.025em]">
                   A-Star
                 </h2>
-                <h4 className="group-hover:-translate-y-2 transition-all duration-300 ease-in-out font-space-grotesk text-[18px] tracking-[-0.025em] font-light">
+                <h4 className="text-left group-hover:-translate-y-2 transition-all duration-300 ease-in-out font-space-grotesk text-[18px] tracking-[-0.025em] font-light">
                   A-Star pathfinding algorithm
                 </h4>
               </div>
