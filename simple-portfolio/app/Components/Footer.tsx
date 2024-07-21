@@ -3,13 +3,13 @@ import React from "react";
 const Footer = () => {
   return (
     <div className=" bg-black h-[60vh] fixed bottom-0 left-0 w-full -z-50">
-      <h5 className="text-[white] text-center pt-24 font-space-grotesk font-normal tracking-[-0.025em] text-8xl leading-[1em] md:text-[100px] text-[color:var(--64ddf9a6011f1)]">
+      <h5 className="text-[white] text-center pt-32 -mb-10 font-space-grotesk font-normal tracking-[-0.025em] text-8xl leading-[1em] md:text-[100px] text-[color:var(--64ddf9a6011f1)]">
         Let's work together
       </h5>
 
       <div className=" border-t-[1px] border-gray-400 border-opacity-40 mt-28 mx-10">
         <a
-          className="align-baseline mt-14 flex absolute  ml-9 font-space-grotesk font-light tracking-[-0.025em] text-[16px] text-[white] text-[color:var(--64ddf9a6011f1)]"
+          className="align-baseline mt-14 flex absolute  ml-9 font-space-grotesk font-light tracking-[-0.025em] text-[16px] text-[white] hover:underline text-[color:var(--64ddf9a6011f1)]"
           href="https://github.com/maydaythecoder"
           target="_blank"
           rel="noopener noreferrer"
@@ -32,24 +32,26 @@ const Footer = () => {
           </p>
         </a>
         <a
-          className="align-baseline absolute mt-8 ml-[35vw] font-space-grotesk font-light tracking-[-0.025em] text-[16px] no-underline hover:underline text-[white] text-[color:var(--64ddf9a6011f1)]"
+          className="align-baseline absolute mt-7 ml-[35vw] font-space-grotesk font-light tracking-[-0.025em] text-[20px] no-underline hover:underline text-[white] text-[color:var(--64ddf9a6011f1)]"
           href="mailto:Muhyadin.Mohamed.003@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           muhyadin.mohamed.003@gmail.com
         </a>
+        <div className="ml-[750px]">
         <a
           className="align-baseline flex justify-between absolute mt-8 pt-6 ml-[35vw] font-space-grotesk font-light tracking-[-0.025em] text-[16px] no-underline hover:underline text-[white] text-[color:var(--64ddf9a6011f1)]"
           href="https://www.linkedin.com/in/muhyadin-mohamed-567a72255/"
           target="_blank"
           rel="noopener noreferrer"
         >
+
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="#808080"
-            className="mercado-match"
+            className="mercado-match "
             width="24"
             height="24"
             focusable="false"
@@ -60,6 +62,7 @@ const Footer = () => {
             Linkedin
           </p>
         </a>
+        </div>
       </div>
     </div>
   );

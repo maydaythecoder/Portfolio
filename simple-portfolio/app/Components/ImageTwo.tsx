@@ -1,54 +1,12 @@
 "use client";
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 
 const ImageTwo: React.FC = () => {
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const lastScrollYRef = useRef(0);
-
-  useEffect(() => {
-    const track = scrollContainerRef.current;
-    if (!track) return;
-
-    const handleScroll = () => {
-      // Only apply the scroll animation on large (lg) screens and above
-      if (window.innerWidth >= 1024) {
-        const scrollDelta = window.scrollY - lastScrollYRef.current;
-        lastScrollYRef.current = window.scrollY;
-
-        const currentTransform = parseFloat(track.style.transform.replace('translateY(', '').replace('px)', '')) || 0;
-        const transformValue = currentTransform + (scrollDelta / 2); 
-
-        track.style.transition = "transform 0.1s ease-out";
-        track.style.transform = `translateY(${transformValue}px)`;
-      }
-    };
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            lastScrollYRef.current = window.scrollY;
-            window.addEventListener("scroll", handleScroll);
-          } else {
-            window.removeEventListener("scroll", handleScroll);
-          }
-        });
-      },
-      { threshold: 0 }
-    );
-
-    observer.observe(track);
-
-    return () => {
-      observer.disconnect();
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <>
       {/* Second Image */}
-      <div className="group ml-4 sm:ml-10 lg:ml-20 mt-10 sm:mt-20 lg:mt-40" ref={scrollContainerRef}>
+      <div className="group ml-4 sm:ml-10 lg:ml-20 mt-10 sm:mt-20 lg:mt-40" >
         <div className="w-full max-w-[90vw] sm:max-w-[60vw] lg:max-w-[30vw] h-[50vh] rounded-lg bg-gray-100 overflow-hidden hover:transition lg:group-hover:scale-95 md:group-hover:scale-95 duration-300 lg:hover:ease-in-out md:hover:ease-in-out">
           <img
             className="w-full h-full object-cover lg:group-hover:scale-110 md:group-hover:scale-110 transition-all duration-300 ease-in-out"

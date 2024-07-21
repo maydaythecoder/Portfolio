@@ -1,36 +1,15 @@
 "use client"
-import React, { useEffect, useRef } from "react";
+import React from "react";
 
 const ImageFour: React.FC = () => {
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const lastScrollYRef = useRef(0);
 
-  useEffect(() => {
-    const track = scrollContainerRef.current;
-    if (!track) return;
 
-    const handleScroll = () => {
-      const scrollDelta = window.scrollY - lastScrollYRef.current;
-      lastScrollYRef.current = window.scrollY;
 
-      const currentTransform = parseFloat(track.style.transform.replace('translateY(', '').replace('px)', '')) || 0;
-      const transformValue = currentTransform - (scrollDelta / 10);
-
-      track.style.transition = "transform 0.1s ease-out";
-      track.style.transform = `translateY(${transformValue}px)`;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <div className="relative">
       {/* Fourth Image */}
-      <div className="group -mt-10 transition-transform duration-[1200ms]" ref={scrollContainerRef} id="group">
+      <div className="group -mt-10 transition-transform duration-[1200ms]" id="group">
         <div className="w-fit rounded-lg bg-gray-100 overflow-hidden hover:transition group-hover:scale-95 duration-300 hover:ease-in-out">
           <img
             className="w-[35vw] h-[90vh] max-w-full group-hover:scale-110 transition-all duration-[1200ms] image"
