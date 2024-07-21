@@ -70,7 +70,7 @@ const ImageOne: React.FC = () => {
           <div className="flip-card-inner group">
             <div className="flip-card-front">
               <div className="group">
-                <div className=" w-full rounded-lg bg-gray-100 overflow-hidden hover:transition group-hover:scale-95 duration-300 hover:ease-in-out">
+                <div className=" w-full rounded-lg bg-gray-100 overflow-hidden hover:transition duration-300 hover:ease-in-out">
                   <img
                     className="w-full h-[600px] object-cover group-hover:scale-110 transition-all duration-300 ease-in-out"
                     src="https://images.unsplash.com/photo-1525286376485-60c84ee403d1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fHNoYXBlfGVufDB8MXwwfHx8MA%3D%D"
