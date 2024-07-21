@@ -6,7 +6,7 @@ const ImageThree = () => {
     <div>
       <>
         {/* Third Image */}
-        <div className="group h-fit">
+        <div className="group h-fit mt-52">
           <div className="w-fit rounded-lg bg-gray-100 overflow-hidden hover:transition group-hover:scale-95 duration-300 hover:ease-in-out">
             <img
               className="w-[40vw] h-[60vh] max-w-[110%] group-hover:scale-110 transition-all duration-300"

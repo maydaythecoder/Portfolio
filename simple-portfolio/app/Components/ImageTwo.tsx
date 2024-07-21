@@ -6,7 +6,7 @@ const ImageTwo: React.FC = () => {
   return (
     <>
       {/* Second Image */}
-      <div className="group ml-4 sm:ml-10 lg:ml-20 mt-10 sm:mt-20 lg:mt-40" >
+      <div className=" relative group ml-4 sm:ml-10 lg:ml-20 mt-10 sm:mt-20 lg:mt-[950px]" >
         <div className="w-full max-w-[90vw] sm:max-w-[60vw] lg:max-w-[30vw] h-[50vh] rounded-lg bg-gray-100 overflow-hidden hover:transition lg:group-hover:scale-95 md:group-hover:scale-95 duration-300 lg:hover:ease-in-out md:hover:ease-in-out">
           <img
             className="w-full h-full object-cover lg:group-hover:scale-110 md:group-hover:scale-110 transition-all duration-300 ease-in-out"
