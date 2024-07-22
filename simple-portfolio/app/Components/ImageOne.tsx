@@ -38,7 +38,7 @@ const ImageOne: React.FC = () => {
           flex-direction: column;
           justify-content: space-between;
           padding: 20px;
-          box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.8), inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.8),  5px 5px 10px rgba(0, 0, 0, 0.1);
         }
         .flipped .flip-card-inner {
           transform: rotateY(180deg);
