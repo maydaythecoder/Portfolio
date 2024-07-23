@@ -4,6 +4,7 @@ import Footer from "./Components/Footer";
 import Marquee from "./Components/marquue";
 import ScrollAnimationSquare from "./Components/ScrollanimationSquare";
 
+// TODO: fix dot scroll animation bugs
 // TODO: add button at center of image on hover to link to project
 // TODO: add animation to links and words on reload
 // TODO: make about page responsive

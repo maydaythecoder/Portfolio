@@ -6,7 +6,7 @@ const ScrollAnimationSquare: React.FC = () => {
   const squareRef = useRef<HTMLDivElement | null>(null);
   const [lastScrollTop, setLastScrollTop] = useState(window.pageYOffset || document.documentElement.scrollTop);
   const [inViewport, setInViewport] = useState(false);
-  const maxDisplacement = 200;
+  const maxDisplacement = 2000; //maximum travel distance
   const scrollFactor = 30 / 100; // 30px per 100px scrolled
   let ticking = false;
 
