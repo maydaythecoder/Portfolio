@@ -2,31 +2,31 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './styles.css';
 
-const ScrollAnimationSquare: React.FC = () => {
-  const squareRef = useRef<HTMLDivElement | null>(null);
+const ScrollAnimationsphere: React.FC = () => {
+  const sphereRef = useRef<HTMLDivElement | null>(null);
   const [lastScrollTop, setLastScrollTop] = useState(window.pageYOffset || document.documentElement.scrollTop);
   const [inViewport, setInViewport] = useState(false);
   const maxDisplacement = 2000; //maximum travel distance
   const scrollFactor = 30 / 100; // 30px per 100px scrolled
   let ticking = false;
 
-  const updateSquarePosition = () => {
-    if (squareRef.current) {
+  const updatespherePosition = () => {
+    if (sphereRef.current) {
       const st = window.pageYOffset || document.documentElement.scrollTop;
       const scrollDelta = st - lastScrollTop;
-      const currentTransform = parseFloat(squareRef.current.style.transform.replace('translateY(', '').replace('px)', '') || '0');
+      const currentTransform = parseFloat(sphereRef.current.style.transform.replace('translateY(', '').replace('px)', '') || '0');
 
       let newTransform = currentTransform - (scrollDelta * scrollFactor);
       newTransform = Math.max(-maxDisplacement, Math.min(maxDisplacement, newTransform));
 
       // Update transform or change position after reaching max displacement
       if (Math.abs(newTransform) === maxDisplacement) {
-        squareRef.current.style.position = 'absolute';
-        squareRef.current.style.top = `${st + window.innerHeight / 2}px`;
+        sphereRef.current.style.position = 'absolute';
+        sphereRef.current.style.top = `${st + window.innerHeight / 2}px`;
       } else {
-        squareRef.current.style.position = 'absolute';
-        squareRef.current.style.top = `${st + window.innerHeight / 2}px`;
-        squareRef.current.style.transform = `translateY(${newTransform}px)`;
+        sphereRef.current.style.position = 'absolute';
+        sphereRef.current.style.top = `${st + window.innerHeight / 2}px`;
+        sphereRef.current.style.transform = `translateY(${newTransform}px)`;
       }
 
       setLastScrollTop(st);
@@ -36,7 +36,7 @@ const ScrollAnimationSquare: React.FC = () => {
 
   const onScroll = () => {
     if (!ticking) {
-      window.requestAnimationFrame(updateSquarePosition);
+      window.requestAnimationFrame(updatespherePosition);
       ticking = true;
     }
   };
@@ -55,33 +55,33 @@ const ScrollAnimationSquare: React.FC = () => {
       { threshold: [0, 1] }
     );
 
-    if (squareRef.current) {
-      observer.observe(squareRef.current);
+    if (sphereRef.current) {
+      observer.observe(sphereRef.current);
     }
 
     window.addEventListener('scroll', onScroll);
 
     return () => {
       window.removeEventListener('scroll', onScroll);
-      if (squareRef.current) {
-        observer.unobserve(squareRef.current);
+      if (sphereRef.current) {
+        observer.unobserve(sphereRef.current);
       }
     };
   }, [lastScrollTop]);
 
   useEffect(() => {
     if (!inViewport) {
-      if (squareRef.current) {
-        squareRef.current.style.position = 'absolute';
+      if (sphereRef.current) {
+        sphereRef.current.style.position = 'absolute';
       }
     }
   }, [inViewport]);
 
   return (
-    <div className="square-container">
-      <div ref={squareRef} className="square"></div>
+    <div className="sphere-container">
+      <div ref={sphereRef} className="sphere"></div>
     </div>
   );
 };
 
-export default ScrollAnimationSquare;
+export default ScrollAnimationsphere;

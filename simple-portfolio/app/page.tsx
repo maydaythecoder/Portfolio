@@ -2,7 +2,7 @@ import Header from "./Components/header";
 import Images from "./Components/Projects";
 import Footer from "./Components/Footer";
 import Marquee from "./Components/marquue";
-import ScrollAnimationSquare from "./Components/ScrollanimationSquare";
+import ScrollAnimationsphere from "./Components/ScrollAnimationSphere";
 
 // TODO: fix dot scroll animation bugs
 // TODO: add button at center of image on hover to link to project
@@ -38,7 +38,7 @@ export default function Home() {
       <div className="bg-slate-100 p-4 sm:p-6 md:p-10 mb-20 md:mb-40 lg:mb-80 align-bottom h-full rounded-b-3xl">
         
         <Header />
-        <ScrollAnimationSquare />
+        <ScrollAnimationsphere />
         <Marquee />
         <Images />
       </div>

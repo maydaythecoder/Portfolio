@@ -4,16 +4,17 @@ body, html {
     background-color: #f0f0f000;
   }
   
-  .square-container {
+  .sphere-container {
     position: relative;
     height: 100%;
   }
   
-  .square {
+  .sphere {
     border-radius: 100%;
     width: 30px;
     height: 30px;
     background: radial-gradient(circle, #555555, #000000);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
     transition: transform 0.7s cubic-bezier(0.25, 0.1, 0.25, 1) 100ms;
     top: -50%;
     left: 50%;
