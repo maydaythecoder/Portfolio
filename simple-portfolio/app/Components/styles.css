@@ -1,23 +1,22 @@
 body, html {
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f000;
-  }
-  
-  .sphere-container {
-    position: relative;
-    height: 100%;
-  }
-  
-  .sphere {
-    border-radius: 100%;
-    width: 30px;
-    height: 30px;
-    background: radial-gradient(circle, #555555, #000000);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-    transition: transform 0.7s cubic-bezier(0.25, 0.1, 0.25, 1) 100ms;
-    top: -50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f000;
+}
+
+.sphere-container {
+  position: relative;
+  height: 100%;
+}
+
+.sphere {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(circle, #555555, #000000);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  transition: transform 0.7s cubic-bezier(0.25, 0.1, 0.25, 1) 100ms;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

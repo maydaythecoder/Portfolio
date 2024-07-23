@@ -10,6 +10,17 @@ const ScrollAnimationsphere: React.FC = () => {
   const scrollFactor = 30 / 100; // 30px per 100px scrolled
   let ticking = false;
 
+  useEffect(() => {
+    // Set initial position behind the marquee
+    const marqueeElement = document.querySelector('.marquee') as HTMLElement;
+    if (marqueeElement && sphereRef.current) {
+      const marqueeBottom = marqueeElement.getBoundingClientRect().bottom;
+      sphereRef.current.style.top = `${marqueeBottom + window.pageYOffset}px`;
+    }
+  
+    setLastScrollTop(window.pageYOffset || document.documentElement.scrollTop);
+  }, []);
+
   const updatespherePosition = () => {
     if (sphereRef.current) {
       const st = window.pageYOffset || document.documentElement.scrollTop;
