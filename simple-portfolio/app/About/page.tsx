@@ -1,6 +1,5 @@
-'use client'
+'use client';
 import React, { useEffect } from 'react';
-import './styles/ParallaxScroll.css';
 import StickyHeader from '../Components/StickyHeader';
 
 const ParallaxScroll: React.FC = () => {
@@ -93,25 +92,39 @@ const ParallaxScroll: React.FC = () => {
     };
   }, []);
 
-  // TODO: add footer
   
-    return (
-      <>
-     <div className='overflow-x-hidden overflow-y-hidden p-5'>
-      <StickyHeader />
-      <div className="relative w-full h-screen bg-white">
-        <h1 className="absolute text-gray-800 font-sans font-light  left-1/2 transform -translate-x-1/2 mt-10 text-6xl font-space-grotesk" data-value="about me">LearnMore</h1>
-        <div id="image-track" className="absolute flex gap-4 left-1/2 transform -translate-y-1/2 mt-20" data-mouse-down-at="0" data-prev-percentage="0">
-          <img className="image w-40 h-56 object-cover rounded-lg border-2 border-gray-400 shadow-lg" src="https://images.unsplash.com/photo-1616789916437-bbf724d10dae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHN1cGVyJTIwY2Fyc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1000&q=60" draggable="false" />
-          <img className="image w-40 h-56 object-cover rounded-lg border-2 border-gray-400 shadow-lg" src="https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Ym13fGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" draggable="false" />
-          <img className="image w-40 h-56 object-cover rounded-lg border-2 border-gray-400 shadow-lg" src="https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" draggable="false" />
-          <img className="image w-40 h-56 object-cover rounded-lg border-2 border-gray-400 shadow-lg" src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNhcnMlMjB3YWxscGFwZXJzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" draggable="false" />
-          <img className="image w-40 h-56 object-cover rounded-lg border-2 border-gray-400 shadow-lg" src="https://images.unsplash.com/photo-1616455164974-dd1c84624216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGFzdG9uJTIwbWFydGlufGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" draggable="false" />
-         </div>
-      </div>
-      </div>
-      </>
-    );
-  };
   
-  export default ParallaxScroll;
+  return (
+    <>
+      <div className="overflow-x-hidden overflow-y-hidden">
+        <StickyHeader />
+        <div className="relative w-full h-screen bg-white">
+          <h1 className="absolute text-gray-800 font-sans font-light left-1/2 transform -translate-x-1/2 mt-10 text-6xl font-space-grotesk" data-value="about me ">learn more</h1>
+          <div
+            id="image-track"
+            className="absolute"
+            style={{
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(0%, -50%)',
+              display: 'flex',
+              gap: '4vmin',
+              margin: '3px',
+            }}
+            data-mouse-down-at="0"
+            data-prev-percentage="0"
+          >
+            <img className="image w-64 h-80 object-cover rounded-lg border-2 border-gray-400 shadow-lg" src="https://images.unsplash.com/photo-1616789916437-bbf724d10dae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHN1cGVyJTIwY2Fyc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1000&q=60" draggable="false" />
+            <img className="image w-72 h-80 object-cover rounded-lg border-2 border-gray-400 shadow-lg" src="https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Ym13fGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" draggable="false" />
+            <img className="image w-72 h-80 object-cover rounded-lg border-2 border-gray-400 shadow-lg" src="https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" draggable="false" />
+            <img className="image w-72 h-80 object-cover rounded-lg border-2 border-gray-400 shadow-lg" src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNhcnMlMjB3YWxscGFwZXJzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" draggable="false" />
+            <img className="image w-72 h-80 object-cover rounded-lg border-2 border-gray-400 shadow-lg" src="https://images.unsplash.com/photo-1616455164974-dd1c84624216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGFzdG9uJTIwbWFydGlufGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" draggable="false" />
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default ParallaxScroll;
