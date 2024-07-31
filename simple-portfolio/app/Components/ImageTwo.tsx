@@ -1,11 +1,13 @@
 "use client";
 import React from 'react';
+import ScrollAnimationTwo from './ScrollAnimationTwo';
 
 const ImageTwo: React.FC = () => {
 
   return (
     <>
       {/* Second Image */}
+      <ScrollAnimationTwo>
       <div className=" relative group ml-4 sm:ml-10 lg:ml-20 mt-10 sm:mt-20 lg:mt-[950px]" >
         <div className="w-full max-w-[90vw] sm:max-w-[60vw] lg:max-w-[30vw] h-[50vh] rounded-lg bg-gray-100 overflow-hidden hover:transition duration-300 lg:hover:ease-in-out md:hover:ease-in-out">
           <img
@@ -21,6 +23,7 @@ const ImageTwo: React.FC = () => {
           Automated virtual assistant to complete basic tasks
         </h4>
       </div>
+      </ScrollAnimationTwo>
     </>
   );
 }

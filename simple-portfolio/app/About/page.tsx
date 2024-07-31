@@ -1,6 +1,7 @@
 'use client';
 import React, { useEffect } from 'react';
 import StickyHeader from '../Components/StickyHeader';
+import Marquee from '../Components/marquue';
 
 const ParallaxScroll: React.FC = () => {
   useEffect(() => {
@@ -121,6 +122,8 @@ const ParallaxScroll: React.FC = () => {
             <img className="image w-72 h-80 object-cover rounded-lg border-2 border-gray-400 shadow-lg" src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNhcnMlMjB3YWxscGFwZXJzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" draggable="false" />
             <img className="image w-72 h-80 object-cover rounded-lg border-2 border-gray-400 shadow-lg" src="https://images.unsplash.com/photo-1616455164974-dd1c84624216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGFzdG9uJTIwbWFydGlufGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" draggable="false" />
           </div>
+          <Marquee />
+
         </div>
       </div>
     </>
